@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 98%;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background: rgb(230, 230, 249);
+}
+
+header a {
+    padding-left: 20px;
+}
+
+header a img {
+    width: 132px;
+    height: 50px;
+}
+
+
+nav {
+    width: 100%;
+    height: 50px;
+    background: #13152d;
+    justify-content: space-between;
+    /* nam giua cot col */
+    display: flex;
+    align-items: center;
+    /* xac dinh tren duoi row , muốn dùng align-item thì
+     phải khai báo display trước (hình như là v) ktra lại xn sau*/
+}
+
+nav .menu {
+    width: 70%;
+}
+
+nav .menu ul {
+    list-style: none;
+}
+
+nav .menu ul li {
+    float: left;
+    padding: 0 3%;
+    text-transform: uppercase;
+}
+
+nav .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .menu ul li a:hover {
+    color: rgb(39, 157, 253);
+}
+
+nav .search {
+    float: right;
+    padding-right: 2%;
+}
+
+div #slide {
+    background-color: rgb(173, 201, 245);
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 30px 120px;
+    font-size: 12px;
+    background-color:rgb(215, 211, 247);
+    
+
+}
+
+div article img {
+    width: 100%;
+    padding: 1%;
+
+}
+
+article h3 {
+    text-align: center;
+    padding: 15px 0px;
+    color: rgb(38, 6, 151);
+    font-size: 10px;
+}
+
+article {
+    background-color: rgb(236, 236, 249);
+    font-size: 90%;
+}
+article .news_list{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+
+article .news_list .news_item {
+    padding: 2%;
+    border: 2px solid rgb(242, 242, 247);
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid rgb(196, 196, 219);
+    border-radius: 5px;
+    margin: 15px;
+
+    /* display: flex;
+    flex-direction: row; */
+    
+}
+
+article .news_list .news_item h4 {
+    color: rgb(90, 71, 234);
+    min-width: 80px;
+    padding: 10px 0px;
+}
+
+article .news_list .news_item img {
+    width: 40%;
+    padding-top: 12px;
+}
+article .news_list .news_item .content{
+    padding-top: 12px;
+}
+
+
+nav .menu ul li {
+    font-size: 60%;
+    line-height: 20px;
+}
+.news_info{
+    width: 100%;
+    height: 300;
+    padding: 10px 30px;
+}
+
+
+
+/* for tablet and destop*/
+@media screen and (min-width:768px) {
+
+    article {
+        background-color: rgb(236, 236, 249);
+    }
+
+    article .news_list {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    article .news_list .news_item {
+        width: 100%;
+        padding: 2%;
+        border: 1px solid rgb(196, 196, 219);
+        border-radius: 5px;
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    nav .menu ul li {
+        font-size: 100%;
+        line-height: 20px;
+    }
+    article .news_list .news_item img {
+        width: 90%;
+        padding: 12px;
+    }
+}
